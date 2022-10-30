@@ -1,16 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ActivationEnd, Router } from '@angular/router';
+import {  filter, map } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-breadcrumbs',
   templateUrl: './breadcrumbs.component.html',
-  styles: [
-  ]
+  styles: [],
 })
-export class BreadcrumbsComponent implements OnInit {
+export class BreadcrumbsComponent {
 
-  constructor() { }
+  public titulo:string="";
 
-  ngOnInit(): void {
+  constructor(private router: Router) {
+  
   }
-
 }

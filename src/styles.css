@@ -8,3 +8,12 @@
 #themecolors .selector{
   cursor: pointer;
 }
+.cursor{
+  cursor: pointer;
+}
+.img-avatar{
+  width: 150px ;
+  height: 150px;
+  padding: 2rem;
+
+}
