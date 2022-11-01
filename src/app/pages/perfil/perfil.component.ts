@@ -34,7 +34,7 @@ export class PerfilComponent implements OnInit {
   }
 
   actualizarPerfil(){
-    console.log(this.perfilForm?.value);
+  
     this.usuarioService.actualizarPerfil(this.perfilForm?.value)
     .subscribe(()=>{
       const {nombre,email}=this.perfilForm?.value;
@@ -52,8 +52,7 @@ export class PerfilComponent implements OnInit {
 
     let file=event.target.files[0];
 
-    console.log(event)
-    console.log(file);
+    
     this.imagenSubir=file;
 
     if(!file){
