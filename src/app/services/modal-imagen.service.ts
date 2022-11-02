@@ -8,7 +8,7 @@ const base_url = environment.base_url;
   providedIn: 'root',
 })
 export class ModalImagenService {
-  private _ocultarModal: boolean = true;
+  public _ocultarModal: boolean = true;
   public tipo: string | undefined;
   public id: string | undefined;
   public img: string | undefined;
@@ -27,7 +27,8 @@ export class ModalImagenService {
     this._ocultarModal = false;
     this.tipo = tipo;
     this.id = id;
-    this.tipo=tipo
+
+
     /*  this.img = img; */
 
     //http://localhost:3000/api/upload/usuarios/no-img
@@ -35,7 +36,7 @@ export class ModalImagenService {
     if (img.includes('https')) {
       this.img = img;
     } else {
-      this.img = `${base_url}/upload/${tipo}/${img}`;
+      this.img = `${base_url}/upload/${tipo}/${id}`;
     }
 
 

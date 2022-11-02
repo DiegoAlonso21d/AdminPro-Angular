@@ -16,11 +16,13 @@ import { AuthModuleModule } from './auth/auth.module.module';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
    
     NopagefoundComponent,
+      
      
        
       

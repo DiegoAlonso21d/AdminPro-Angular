@@ -18,6 +18,10 @@ import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { UsuariosComponent } from './mantenimiento/usuarios/usuarios.component';
+import { HospitalesComponent } from './mantenimiento/hospitales/hospitales.component';
+import { MedicosComponent } from './mantenimiento/medicos/medicos.component';
+import { PipesModule } from '../pipes/pipes.module';
+import { MedicoComponent } from './mantenimiento/medicos/medico.component';
 
 
 
@@ -33,6 +37,9 @@ import { UsuariosComponent } from './mantenimiento/usuarios/usuarios.component';
     RxjsComponent,
     PerfilComponent,
     UsuariosComponent,
+    HospitalesComponent,
+    MedicosComponent,
+    MedicoComponent,
   ],
   exports: [
     DashboardComponent,
@@ -50,6 +57,7 @@ import { UsuariosComponent } from './mantenimiento/usuarios/usuarios.component';
     SharedModule,
     RouterModule,
     ComponentsModule,
+    PipesModule
   ],
 })
 export class PagesModule {}
